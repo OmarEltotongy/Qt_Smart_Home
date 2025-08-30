@@ -1,0 +1,445 @@
+/* ==================== GLOBAL STYLES ==================== */
+* {
+    font-family: 'Inter', 'Roboto', 'Segoe UI', sans-serif;
+    color: #E6E6FA; /* Light lavender text for readability */
+    font-size: 14px;
+}
+
+/* Main window with gradient background */
+QMainWindow, QDialog, QWidget {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #1C2526, stop: 1 #0A3D62);
+}
+
+/* ==================== LABELS ==================== */
+QLabel {
+    background: transparent; /* Fully transparent for clean integration */
+    padding: 3px;
+    transition: color 0.3s ease;
+}
+
+QLabel[objectName^="Fetched_"] {
+    font-weight: bold;
+    color: #82b1ff; /* Light blue for fetched data */
+    font-size: 12pt;
+    text-shadow: 0 2px 4px rgba(130, 177, 255, 0.3);
+}
+
+QLabel#label, QLabel#label_3, QLabel#label_2 {
+    background: transparent;
+    color: #64b5f6; /* Bright blue for main titles */
+    font-weight: 800;
+    font-size: 28pt;
+    text-shadow: 0 4px 8px rgba(100, 181, 246, 0.3);
+}
+
+/* System Information Titles */
+QLabel#label_SystemVersion, QLabel#label_LastUpdate, QLabel#label_SystemUptime,
+QLabel#label_MemoryUsage, QLabel#label_DatabaseSize {
+    font-size: 16px;
+    font-weight: 700;
+    color: #B0C4DE; /* Steel blue for better visibility */
+    text-shadow: 0 2px 4px rgba(79, 195, 247, 0.2);
+    padding: 5px;
+}
+
+/* Unit Labels - Enhanced to complement System Information titles */
+QLabel#label_UnitOfMemoryUsage, QLabel#label_UnitOfLastUpdate, QLabel#label_UnitOfDatabaseSize {
+    font-size: 16px;
+    font-weight: 700;
+    color: #82b1ff; /* Light blue-gray to complement titles */
+    text-shadow: 0 1px 3px rgba(79, 195, 247, 0.15);
+    padding: 6px;
+    background: rgba(40, 40, 80, 0.3); /* Subtle glassmorphism */
+    border-radius: 4px;
+}
+
+/* ==================== BUTTONS (QPushButton) ==================== */
+QPushButton {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #5C6BC0, stop: 1 #3F51B5); /* Indigo gradient */
+    border: 1px solid #7986CB;
+    border-radius: 10px;
+    padding: 12px 24px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #FFFFFF;
+    min-height: 36px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+QPushButton:hover {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #7986CB, stop: 1 #5C6BC0);
+    border: 1px solid #9FA8DA;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(121, 134, 203, 0.3);
+}
+
+QPushButton:pressed {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #3F51B5, stop: 1 #2D3E50);
+    transform: translateY(0);
+    box-shadow: 0 2px 6px rgba(121, 134, 203, 0.2);
+}
+
+/* View All Commands Button */
+QPushButton#pushButton_5:hover {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #64B5F6, stop: 1 #2196F3);
+}
+
+/* ON/OFF Buttons - Neutral base, green/red only on hover */
+QPushButton[objectName*="On"], QPushButton[objectName*="Off"] {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #5C6BC0, stop: 1 #3F51B5);
+}
+
+QPushButton[objectName*="On"]:hover {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #81C784, stop: 1 #4CAF50);
+    box-shadow: 0 6px 12px rgba(129, 199, 132, 0.4);
+}
+
+QPushButton[objectName*="Off"]:hover {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #E57373, stop: 1 #F44336);
+    box-shadow: 0 6px 12px rgba(229, 115, 115, 0.4);
+}
+
+/* Device On/Off Buttons */
+QPushButton#pushButton_FirstFloorDeviceOn, QPushButton#pushButton_SecondFloorDeviceOn {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #5C6BC0, stop: 1 #3F51B5);
+}
+
+QPushButton#pushButton_FirstFloorDeviceOn:hover, QPushButton#pushButton_SecondFloorDeviceOn:hover {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #81C784, stop: 1 #4CAF50);
+}
+
+QPushButton#pushButton_FirstFloorDeviceOff, QPushButton#pushButton_SecondFloorDeviceOff {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #5C6BC0, stop: 1 #3F51B5);
+}
+
+QPushButton#pushButton_FirstFloorDeviceOff:hover, QPushButton#pushButton_SecondFloorDeviceOff:hover {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #E57373, stop: 1 #F44336);
+}
+
+/* Add Device to Control */
+QPushButton#pushButton_addDeviceToControl:hover {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #4FC3F7, stop: 1 #29B6F6);
+}
+
+/* +New Rule and Stop This Rule */
+QPushButton#pushButton_AddNewRule {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #66BB6A, stop: 1 #388E3C);
+}
+
+QPushButton#pushButton_AddNewRule:hover {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #81C784, stop: 1 #4CAF50);
+}
+
+QPushButton#pushButton_StopThisRule {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #EF5350, stop: 1 #D32F2F);
+}
+
+QPushButton#pushButton_StopThisRule:hover {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #E57373, stop: 1 #F44336);
+}
+
+/* Mood Buttons - Context-based colors for checked state, hover color changes */
+QPushButton#pushButton_ComfortMode, QPushButton#pushButton_EnergySaving,
+QPushButton#pushButton_AwayMode, QPushButton#pushButton_SleepMode {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #5C6BC0, stop: 1 #3F51B5);
+}
+
+QPushButton#pushButton_ComfortMode:hover {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #64B5F6, stop: 1 #2196F3);
+}
+
+QPushButton#pushButton_ComfortMode:checked {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #64B5F6, stop: 1 #2196F3);
+}
+
+QPushButton#pushButton_EnergySaving:hover {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #81C784, stop: 1 #4CAF50);
+}
+
+QPushButton#pushButton_EnergySaving:checked {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #66BB6A, stop: 1 #388E3C);
+}
+
+QPushButton#pushButton_AwayMode:hover {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #FFB74D, stop: 1 #F57C00);
+}
+
+QPushButton#pushButton_AwayMode:checked {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #FFB74D, stop: 1 #F57C00);
+}
+
+QPushButton#pushButton_SleepMode:hover {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #5E35B1, stop: 1 #4527A0);
+}
+
+QPushButton#pushButton_SleepMode:checked {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #5E35B1, stop: 1 #4527A0);
+}
+
+/* Queue, Redo, Undo, Clear All Queue */
+QPushButton#pushButton_Queue:hover {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #64B5F6, stop: 1 #2196F3);
+}
+
+QPushButton#pushButton_Redo, QPushButton#pushButton_Undo {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #5C6BC0, stop: 1 #3F51B5);
+}
+
+QPushButton#pushButton_Redo:hover, QPushButton#pushButton_Undo:hover {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #FFB74D, stop: 1 #F57C00);
+}
+
+QPushButton#pushButton_ClearAllQueue:hover {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #E57373, stop: 1 #F44336);
+}
+
+/* Add Device, Remove Selected Device */
+QPushButton#pushButton_AddDevice {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #66BB6A, stop: 1 #388E3C);
+}
+
+QPushButton#pushButton_AddDevice:hover {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #81C784, stop: 1 #4CAF50);
+}
+
+QPushButton#pushButton_RemoveSelectedDevice {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #EF5350, stop: 1 #D32F2F);
+}
+
+QPushButton#pushButton_RemoveSelectedDevice:hover {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #E57373, stop: 1 #F44336);
+}
+
+/* House Configurations Buttons */
+QPushButton#pushButton_AddNewMode:hover, QPushButton#pushButton_AddNewRoom:hover,
+QPushButton#pushButton_AddNewGroup:hover, QPushButton#pushButton_AddNewFloor:hover {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #4FC3F7, stop: 1 #29B6F6);
+}
+
+/* Specific Mode Buttons */
+QPushButton#pushButton_goodNightMode {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #4A4A8A, stop: 1 #2D2D5A);
+}
+QPushButton#pushButton_goodNightMode:hover {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #5E35B1, stop: 1 #4527A0);
+    border: 2px solid #B39DDB;
+    box-shadow: 0 8px 20px rgba(179, 157, 219, 0.4);
+}
+
+QPushButton#pushButton_iamHomeMode {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #4A4A8A, stop: 1 #2D2D5A);
+}
+QPushButton#pushButton_iamHomeMode:hover {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #66BB6A, stop: 1 #388E3C);
+    border: 2px solid #A5D6A7;
+    box-shadow: 0 8px 20px rgba(165, 214, 167, 0.4);
+}
+
+QPushButton#pushButton_leavingHomeMode {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #4A4A8A, stop: 1 #2D2D5A);
+}
+QPushButton#pushButton_leavingHomeMode:hover {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #FFCA28, stop: 1 #FFB300);
+    border: 2px solid #FFE082;
+    box-shadow: 0 8px 20px rgba(255, 202, 40, 0.4);
+}
+
+QPushButton#pushButton_emergencyShutdownMode {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #EF5350, stop: 1 #D32F2F);
+    border: 2px solid #EF9A9A;
+    animation: pulseRed 1.5s infinite;
+}
+QPushButton#pushButton_emergencyShutdownMode:hover {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #E57373, stop: 1 #F44336);
+    box-shadow: 0 8px 20px rgba(239, 83, 80, 0.5);
+    transform: scale(1.05);
+}
+
+QPushButton#pushButton_CinemaMode {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #4A4A8A, stop: 1 #2D2D5A);
+}
+QPushButton#pushButton_CinemaMode:hover {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #AB47BC, stop: 1 #8E24AA);
+    border: 2px solid #CE93D8;
+    box-shadow: 0 8px 20px rgba(206, 147, 216, 0.4);
+}
+
+/* ==================== TABS ==================== */
+QTabWidget::pane {
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    background: rgba(40, 40, 80, 0.5);
+    backdrop-filter: blur(6px);
+}
+
+QTabBar::tab {
+    background: rgba(50, 50, 90, 0.7);
+    color: #B0BEC5;
+    padding: 10px 20px;
+    margin: 2px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    min-width: 100px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+QTabBar::tab:selected {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                               stop: 0 #64B5F6, stop: 1 #2196F3);
+    color: #FFFFFF;
+    border-bottom: 3px solid #4FC3F7;
+    animation: tabGlow 2s infinite;
+}
+
+QTabBar::tab:hover:!selected {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                               stop: 0 #4FC3F7, stop: 1 #29B6F6);
+    color: #E6E6FA;
+}
+
+/* ==================== GLASSMORPHISM CONTAINERS ==================== */
+QGroupBox {
+    background: rgba(30, 30, 60, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    margin-top: 20px;
+    padding: 10px;
+    backdrop-filter: blur(8px);
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top center;
+    padding: 6px 16px;
+    background: rgba(40, 40, 80, 0.7);
+    color: #B0C4DE;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* Themed Group Boxes */
+QGroupBox#groupBox { /* Energy */
+    background: rgba(46, 125, 50, 0.5);
+    border: 1px solid rgba(76, 175, 80, 0.4);
+}
+QGroupBox#GroupBox_system_status { /* System */
+    background: rgba(30, 136, 229, 0.5);
+    border: 1px solid rgba(100, 181, 246, 0.4);
+}
+QGroupBox#GroupBox_quick_actions { /* Quick Actions */
+    background: rgba(106, 27, 154, 0.5);
+    border: 1px solid rgba(186, 104, 200, 0.4);
+}
+
+/* ==================== TABLES & LISTS ==================== */
+QListView, QTableView, QTableWidget {
+    background: rgba(40, 40, 80, 0.5);
+    alternate-background-color: rgba(50, 50, 100, 0.4);
+    gridline-color: rgba(120, 144, 156, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
+    color: #E6E6FA;
+    selection-background-color: #4FC3F7;
+    selection-color: #FFFFFF;
+}
+
+QHeaderView::section {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #5C6BC0, stop: 1 #3F51B5);
+    color: #E6E6FA;
+    padding: 6px;
+    border: 1px solid rgba(120, 144, 156, 0.3);
+    font-weight: 600;
+}
+
+/* ==================== SCROLLBARS ==================== */
+QScrollBar:vertical {
+    background: rgba(40, 40, 80, 0.5);
+    width: 10px;
+    margin: 0;
+    border-radius: 5px;
+}
+
+QScrollBar::handle:vertical {
+    background: rgba(100, 181, 246, 0.6);
+    border-radius: 5px;
+    min-height: 20px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: rgba(79, 195, 247, 0.8);
+}
+
+/* ==================== INPUT FIELDS ==================== */
+QLineEdit, QSpinBox, QComboBox {
+    background: rgba(50, 50, 100, 0.5);
+    border: 1px solid rgba(120, 144, 156, 0.3);
+    border-radius: 8px;
+    padding: 8px;
+    color: #E6E6FA;
+    selection-background-color: #4FC3F7;
+}
+
+QLineEdit:focus, QSpinBox:focus, QComboBox:focus {
+    border: 1px solid #4FC3F7;
+    box-shadow: 0 0 8px rgba(79, 195, 247, 0.4);
+}
+
+/* ==================== ANIMATIONS ==================== */
+@keyframes pulseRed {
+    0% { box-shadow: 0 0 0 0 rgba(239, 83, 80, 0.5); }
+    70% { box-shadow: 0 0 0 12px rgba(239, 83, 80, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(239, 83, 80, 0); }
+}
+
+@keyframes tabGlow {
+    0%, 100% { box-shadow: 0 0 5px rgba(79, 195, 247, 0.5); }
+    50% { box-shadow: 0 0 12px rgba(79, 195, 247, 0.8); }
+}
