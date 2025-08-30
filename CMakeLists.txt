@@ -13,7 +13,7 @@ qt_add_executable(SmartHome
     mainwindow.ui
 )
 
-# Add this line to include the QSS file as a resource
+# This line to include the QSS file as a resource
 qt_add_resources(SmartHome "application_resources"
     PREFIX
         "/"
