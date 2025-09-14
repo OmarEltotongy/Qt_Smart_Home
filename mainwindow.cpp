@@ -4,6 +4,7 @@
 #include <QFile>
 #include <QApplication>
 #include <QResource>
+#include "Data/json.hpp"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -24,6 +25,7 @@ MainWindow::MainWindow(QWidget *parent)
         // Optional: Print error if stylesheet couldn't be loaded
         qDebug() << "Could not open stylesheet file:" << styleFile.errorString();
     }
+
 }
 
 MainWindow::~MainWindow()
