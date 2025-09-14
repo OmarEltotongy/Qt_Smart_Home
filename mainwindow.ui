@@ -1432,7 +1432,7 @@
                 </widget>
                </item>
                <item>
-                <widget class="QSpinBox" name="spinBox_CommandQueueSize"/>
+                <widget class="QSpinBox" name="Fetched_spinBox_CommandQueueSize"/>
                </item>
               </layout>
              </item>
