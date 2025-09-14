@@ -13,13 +13,25 @@ qt_add_executable(SmartHome
     mainwindow.ui
 )
 
-# This line to include the QSS file as a resource
-qt_add_resources(SmartHome "application_resources"
-    PREFIX
-        "/"
+# Add JSON data files as embedded resources
+qt_add_resources(SmartHome "data_resources"
+    PREFIX "/data"
     FILES
-        "stylesheet.qss"
+        Data/system_config.json
+        Data/devices.json
+        Data/rooms_groups.json
+        Data/energy_data.json
+        Data/automation_rules.json
+        Data/command_queue.json
+        Data/recent_commands.json
+        Data/json.hpp
 )
+
+# This line to include the QSS file as a resource (if you have it)
+# qt_add_resources(SmartHome "style_resources"
+#     PREFIX "/"
+#     FILES "stylesheet.qss"
+# )
 
 target_link_libraries(SmartHome
     PRIVATE
