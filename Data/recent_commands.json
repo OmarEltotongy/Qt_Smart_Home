@@ -1,0 +1,44 @@
+{
+  "commands": [
+    {
+      "id": "recent_001",
+      "timestamp": "2024-01-15T14:30:00Z",
+      "device_id": "device_001",
+      "device_name": "Living Room Main Light",
+      "action": "Turned On (75% brightness)",
+      "initiated_by": "User",
+      "status": "Success",
+      "room": "Living Room"
+    },
+    {
+      "id": "recent_002",
+      "timestamp": "2024-01-15T14:25:00Z",
+      "device_id": "device_003",
+      "device_name": "Master Bedroom AC",
+      "action": "Temperature set to 22°C",
+      "initiated_by": "Automation (Good Night Mode)",
+      "status": "Success",
+      "room": "Master Bedroom"
+    },
+    {
+      "id": "recent_003",
+      "timestamp": "2024-01-15T14:20:00Z",
+      "device_id": "device_002",
+      "device_name": "Kitchen Ceiling Light",
+      "action": "Turned Off",
+      "initiated_by": "User",
+      "status": "Success",
+      "room": "Kitchen"
+    },
+    {
+      "id": "recent_004",
+      "timestamp": "2024-01-15T14:15:00Z",
+      "device_id": "rule_001",
+      "device_name": "Good Night Mode",
+      "action": "Activated",
+      "initiated_by": "Schedule",
+      "status": "Success",
+      "room": "Whole House"
+    }
+  ]
+}

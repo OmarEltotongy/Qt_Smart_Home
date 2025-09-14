@@ -1,0 +1,37 @@
+{
+  "queue": [
+    {
+      "id": "cmd_001",
+      "timestamp": "2024-01-15T14:30:00Z",
+      "device_id": "device_001",
+      "device_name": "Living Room Main Light",
+      "command": "turn_on",
+      "parameters": {"brightness": 75},
+      "status": "completed",
+      "executed_by": "user",
+      "room": "room_001"
+    },
+    {
+      "id": "cmd_002",
+      "timestamp": "2024-01-15T14:25:00Z",
+      "device_id": "device_003",
+      "device_name": "Master Bedroom AC",
+      "command": "set_temperature",
+      "parameters": {"temperature": 22},
+      "status": "completed",
+      "executed_by": "automation",
+      "room": "room_003"
+    },
+    {
+      "id": "cmd_003",
+      "timestamp": "2024-01-15T14:20:00Z",
+      "device_id": "group_001",
+      "device_name": "All Main Lights",
+      "command": "turn_off",
+      "parameters": {},
+      "status": "pending",
+      "executed_by": "user",
+      "room": "multiple"
+    }
+  ]
+}

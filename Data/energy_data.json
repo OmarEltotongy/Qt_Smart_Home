@@ -1,0 +1,34 @@
+{
+  "current_usage": 3.2,
+  "unit": "kW",
+  "today_usage": 78,
+  "today_unit": "kWh",
+  "this_month_usage": 450,
+  "this_month_cost": 150,
+  "currency": "$",
+  "room_breakdown": {
+    "room_001": 285.2,
+    "room_002": 214.1,
+    "room_003": 128.7,
+    "room_004": 43.7
+  },
+  "device_breakdown": {
+    "device_003": 1500,
+    "device_009": 180,
+    "device_006": 120,
+    "device_002": 12.3,
+    "device_001": 9.5
+  },
+  "historical_data": {
+    "daily": [
+      {"date": "2024-01-14", "usage": 72, "cost": 135},
+      {"date": "2024-01-13", "usage": 85, "cost": 160},
+      {"date": "2024-01-12", "usage": 68, "cost": 128}
+    ],
+    "monthly": [
+      {"month": "2023-12", "usage": 4200, "cost": 1450},
+      {"month": "2023-11", "usage": 3800, "cost": 1320},
+      {"month": "2023-10", "usage": 3500, "cost": 1200}
+    ]
+  }
+}

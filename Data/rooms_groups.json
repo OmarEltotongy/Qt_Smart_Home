@@ -1,0 +1,70 @@
+{
+  "rooms": [
+    {
+      "id": "room_001",
+      "name": "Living Room",
+      "floor": 1,
+      "device_count": 8,
+      "devices": [
+        "device_001", "device_005", "device_006", "device_007",
+        "device_008", "device_021", "device_022", "device_023"
+      ],
+      "energy_usage": 285.2
+    },
+    {
+      "id": "room_002",
+      "name": "Kitchen",
+      "floor": 1,
+      "device_count": 4,
+      "devices": ["device_002", "device_009", "device_010", "device_011", "device_012"],
+      "energy_usage": 214.1
+    },
+    {
+      "id": "room_003",
+      "name": "Master Bedroom",
+      "floor": 2,
+      "device_count": 4,
+      "devices": ["device_003", "device_013", "device_014", "device_015", "device_016"],
+      "energy_usage": 128.7
+    },
+    {
+      "id": "room_004",
+      "name": "Bathroom",
+      "floor": 2,
+      "device_count": 4,
+      "devices": ["device_004", "device_017", "device_018", "device_019", "device_020"],
+      "energy_usage": 43.7
+    }
+  ],
+  "groups": [
+    {
+      "id": "group_001",
+      "name": "Main Lights",
+      "device_count": 6,
+      "devices": [
+        "device_001", "device_002", "device_005", "device_013",
+        "device_014", "device_017"
+      ],
+      "energy_usage": 52.2
+    },
+    {
+      "id": "group_002",
+      "name": "Climate Control",
+      "device_count": 5,
+      "devices": [
+        "device_003", "device_009", "device_018", "device_020"
+      ],
+      "energy_usage": 1532
+    },
+    {
+      "id": "group_003",
+      "name": "Entertainment",
+      "device_count": 6,
+      "devices": [
+        "device_006", "device_007", "device_008", "device_015",
+        "device_016", "device_019"
+      ],
+      "energy_usage": 263.5
+    }
+  ]
+}

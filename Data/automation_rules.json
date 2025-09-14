@@ -1,0 +1,181 @@
+{
+  "rules": [
+    {
+      "id": "rule_001",
+      "name": "Good Night Mode",
+      "description": "Turns off all lights, closes curtains, and sets optimal sleep conditions",
+      "enabled": true,
+      "trigger": {
+        "type": "time",
+        "time": "23:00",
+        "days": ["mon", "tue", "wed", "thu", "fri", "sat", "sun"]
+      },
+      "actions": [
+        {"device": "group_001", "action": "turn_off"},
+        {"device": "device_003", "action": "set_temperature", "value": 20},
+        {"device": "device_003", "action": "set_mode", "value": "sleep"},
+        {"device": "device_008", "action": "set_position", "value": 0},
+        {"device": "device_016", "action": "set_position", "value": 0},
+        {"device": "device_006", "action": "turn_off"},
+        {"device": "device_007", "action": "turn_off"},
+        {"device": "device_015", "action": "turn_off"}
+      ]
+    },
+    {
+      "id": "rule_002",
+      "name": "I'm Home Mode",
+      "description": "Welcoming environment with lights and comfortable temperature",
+      "enabled": true,
+      "trigger": {
+        "type": "presence",
+        "sensor": "front_door_sensor"
+      },
+      "actions": [
+        {"device": "device_001", "action": "turn_on", "brightness": 80},
+        {"device": "device_002", "action": "turn_on", "brightness": 70},
+        {"device": "device_003", "action": "set_temperature", "value": 23},
+        {"device": "device_007", "action": "play_music", "playlist": "welcome_home"}
+      ]
+    },
+    {
+      "id": "rule_003",
+      "name": "Leaving Home Mode",
+      "description": "Security mode that turns off unnecessary devices and activates monitoring",
+      "enabled": true,
+      "trigger": {
+        "type": "presence",
+        "sensor": "front_door_sensor",
+        "state": "away"
+      },
+      "actions": [
+        {"device": "group_001", "action": "turn_off"},
+        {"device": "device_003", "action": "set_temperature", "value": 25},
+        {"device": "device_006", "action": "turn_off"},
+        {"device": "device_007", "action": "turn_off"},
+        {"device": "device_015", "action": "turn_off"},
+        {"device": "device_009", "action": "set_energy_saver", "value": true}
+      ]
+    },
+    {
+      "id": "rule_004",
+      "name": "Cinema Mode",
+      "description": "Optimized lighting and audio for movie watching experience",
+      "enabled": true,
+      "trigger": {
+        "type": "voice",
+        "command": "activate cinema mode"
+      },
+      "actions": [
+        {"device": "device_001", "action": "turn_on", "brightness": 10, "color": "warm_white"},
+        {"device": "device_005", "action": "turn_on", "brightness": 5, "color": "blue"},
+        {"device": "device_008", "action": "set_position", "value": 100},
+        {"device": "device_006", "action": "turn_on", "input": "hdmi1"},
+        {"device": "device_007", "action": "set_volume", "value": 65},
+        {"device": "device_003", "action": "set_temperature", "value": 21}
+      ]
+    },
+    {
+      "id": "rule_005",
+      "name": "Emergency Shutdown Mode",
+      "description": "Immediately turns off all non-essential devices for safety",
+      "enabled": true,
+      "trigger": {
+        "type": "manual",
+        "button": "emergency_shutdown"
+      },
+      "actions": [
+        {"device": "group_001", "action": "turn_off"},
+        {"device": "group_003", "action": "turn_off"},
+        {"device": "device_003", "action": "turn_off"},
+        {"device": "device_009", "action": "set_energy_saver", "value": true},
+        {"device": "device_010", "action": "turn_off"},
+        {"device": "device_011", "action": "turn_off"},
+        {"device": "device_018", "action": "turn_off"},
+        {"device": "device_020", "action": "turn_off"}
+      ]
+    },
+    {
+      "id": "rule_006",
+      "name": "Morning Routine",
+      "description": "Gradual wake-up with lights and temperature adjustment",
+      "enabled": true,
+      "trigger": {
+        "type": "time",
+        "time": "06:30",
+        "days": ["mon", "tue", "wed", "thu", "fri"]
+      },
+      "actions": [
+        {"device": "device_013", "action": "turn_on", "brightness": 30},
+        {"device": "device_014", "action": "turn_on", "brightness": 20},
+        {"device": "device_003", "action": "set_temperature", "value": 22},
+        {"device": "device_016", "action": "set_position", "value": 50},
+        {"device": "device_007", "action": "play_music", "playlist": "morning_wakeup"}
+      ]
+    },
+    {
+      "id": "rule_007",
+      "name": "Evening Relaxation",
+      "description": "Creates a calming atmosphere for evening relaxation",
+      "enabled": true,
+      "trigger": {
+        "type": "time",
+        "time": "19:00",
+        "days": ["mon", "tue", "wed", "thu", "fri", "sat", "sun"]
+      },
+      "actions": [
+        {"device": "group_001", "action": "set_brightness", "value": 40},
+        {"device": "group_001", "action": "set_color", "value": "warm_white"},
+        {"device": "device_003", "action": "set_temperature", "value": 22},
+        {"device": "device_007", "action": "play_music", "playlist": "relaxing_evening"}
+      ]
+    }
+  ],
+  "moods": {
+    "comfort_mode": {
+      "name": "Comfort Mode",
+      "description": "Optimal settings for daily living comfort with balanced energy usage",
+      "temperature": 23,
+      "lighting_level": 80,
+      "active_rules": ["rule_002", "rule_006", "rule_007"]
+    },
+    "energy_saving_mode": {
+      "name": "Energy Saving Mode",
+      "description": "Reduced energy consumption with minimal comfort impact, ideal for when you're away or sleeping",
+      "temperature": 25,
+      "lighting_level": 30,
+      "active_rules": ["rule_001", "rule_003"]
+    },
+    "away_mode": {
+      "name": "Away Mode",
+      "description": "Security-focused settings while away from home, simulates occupancy for security",
+      "temperature": 28,
+      "lighting_level": 0,
+      "active_rules": ["rule_003"],
+      "security_features": ["random_light_activation", "temperature_optimization"]
+    },
+    "sleep_mode": {
+      "name": "Sleep Mode",
+      "description": "Optimized settings for comfortable sleep with minimal disturbances",
+      "temperature": 20,
+      "lighting_level": 0,
+      "active_rules": ["rule_001"],
+      "features": ["noise_reduction", "light_elimination", "optimal_sleep_temperature"]
+    },
+    "cinema_mode": {
+      "name": "Cinema Mode",
+      "description": "Immersive entertainment experience with optimized lighting and audio settings",
+      "temperature": 21,
+      "lighting_level": 15,
+      "active_rules": ["rule_004"],
+      "features": ["theater_lighting", "enhanced_audio", "climate_optimization"]
+    }
+  },
+  "active_mood": "comfort_mode",
+  "quick_actions": {
+    "good_night_mode": "rule_001",
+    "im_home_mode": "rule_002",
+    "leaving_home_mode": "rule_003",
+    "cinema_mode": "rule_004",
+    "emergency_shutdown": "rule_005"
+  }
+}

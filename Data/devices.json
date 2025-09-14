@@ -1,0 +1,341 @@
+{
+  "devices": [
+    {
+      "id": "device_001",
+      "name": "Living Room Main Light",
+      "type": "light",
+      "manufacturer": "Philips Hue",
+      "model": "LWB006",
+      "status": "online",
+      "power_state": "off",
+      "brightness": 0,
+      "color_temperature": 4000,
+      "location": {
+        "floor": 1,
+        "room": "room_001",
+        "group": "group_001"
+      },
+      "energy_usage": 9.5,
+      "last_updated": "2024-01-15T14:30:00Z"
+    },
+    {
+      "id": "device_002",
+      "name": "Kitchen Ceiling Light",
+      "type": "light",
+      "manufacturer": "TP-Link",
+      "model": "KL130",
+      "status": "online",
+      "power_state": "on",
+      "brightness": 75,
+      "location": {
+        "floor": 1,
+        "room": "room_002",
+        "group": "group_001"
+      },
+      "energy_usage": 12.3,
+      "last_updated": "2024-01-15T14:25:00Z"
+    },
+    {
+      "id": "device_003",
+      "name": "Master Bedroom AC",
+      "type": "air_conditioner",
+      "manufacturer": "LG",
+      "model": "AC-5000",
+      "status": "online",
+      "power_state": "on",
+      "temperature": 22,
+      "mode": "cool",
+      "location": {
+        "floor": 2,
+        "room": "room_003",
+        "group": "group_002"
+      },
+      "energy_usage": 1500,
+      "last_updated": "2024-01-15T14:20:00Z"
+    },
+    {
+      "id": "device_004",
+      "name": "Bathroom Exhaust Fan",
+      "type": "fan",
+      "manufacturer": "Panasonic",
+      "model": "FV-08VKS2",
+      "status": "online",
+      "power_state": "off",
+      "location": {
+        "floor": 2,
+        "room": "room_004",
+        "group": "group_003"
+      },
+      "energy_usage": 45,
+      "last_updated": "2024-01-15T14:15:00Z"
+    },
+    {
+      "id": "device_005",
+      "name": "Living Room Lamp",
+      "type": "light",
+      "manufacturer": "IKEA",
+      "model": "TRADFRI",
+      "status": "online",
+      "power_state": "on",
+      "brightness": 60,
+      "location": {
+        "floor": 1,
+        "room": "room_001",
+        "group": "group_001"
+      },
+      "energy_usage": 8.2,
+      "last_updated": "2024-01-15T14:10:00Z"
+    },
+    {
+      "id": "device_006",
+      "name": "Living Room TV",
+      "type": "entertainment",
+      "manufacturer": "Samsung",
+      "model": "QN65Q80A",
+      "status": "online",
+      "power_state": "off",
+      "location": {
+        "floor": 1,
+        "room": "room_001",
+        "group": "group_003"
+      },
+      "energy_usage": 120,
+      "last_updated": "2024-01-15T14:05:00Z"
+    },
+    {
+      "id": "device_007",
+      "name": "Living Room Smart Speaker",
+      "type": "entertainment",
+      "manufacturer": "Amazon",
+      "model": "Echo Dot",
+      "status": "online",
+      "power_state": "on",
+      "volume": 30,
+      "location": {
+        "floor": 1,
+        "room": "room_001",
+        "group": "group_003"
+      },
+      "energy_usage": 5.5,
+      "last_updated": "2024-01-15T14:00:00Z"
+    },
+    {
+      "id": "device_008",
+      "name": "Living Room Curtains",
+      "type": "motor",
+      "manufacturer": "Lutron",
+      "model": "Serena",
+      "status": "online",
+      "power_state": "closed",
+      "position": 0,
+      "location": {
+        "floor": 1,
+        "room": "room_001",
+        "group": "group_003"
+      },
+      "energy_usage": 25,
+      "last_updated": "2024-01-15T13:55:00Z"
+    },
+    {
+      "id": "device_009",
+      "name": "Kitchen Refrigerator",
+      "type": "appliance",
+      "manufacturer": "LG",
+      "model": "LFXS28968S",
+      "status": "online",
+      "power_state": "on",
+      "temperature": 4,
+      "location": {
+        "floor": 1,
+        "room": "room_002",
+        "group": "group_002"
+      },
+      "energy_usage": 180,
+      "last_updated": "2024-01-15T13:50:00Z"
+    },
+    {
+      "id": "device_010",
+      "name": "Kitchen Oven",
+      "type": "appliance",
+      "manufacturer": "GE",
+      "model": "JGB735SPSS",
+      "status": "offline",
+      "power_state": "off",
+      "location": {
+        "floor": 1,
+        "room": "room_002",
+        "group": "group_002"
+      },
+      "energy_usage": 0,
+      "last_updated": "2024-01-15T13:45:00Z"
+    },
+    {
+      "id": "device_011",
+      "name": "Kitchen Dishwasher",
+      "type": "appliance",
+      "manufacturer": "Bosch",
+      "model": "SHXM78Z75N",
+      "status": "online",
+      "power_state": "off",
+      "location": {
+        "floor": 1,
+        "room": "room_002",
+        "group": "group_002"
+      },
+      "energy_usage": 15,
+      "last_updated": "2024-01-15T13:40:00Z"
+    },
+    {
+      "id": "device_012",
+      "name": "Kitchen Under Cabinet Light",
+      "type": "light",
+      "manufacturer": "Govee",
+      "model": "H6127",
+      "status": "online",
+      "power_state": "on",
+      "brightness": 40,
+      "color": "warm_white",
+      "location": {
+        "floor": 1,
+        "room": "room_002",
+        "group": "group_001"
+      },
+      "energy_usage": 6.8,
+      "last_updated": "2024-01-15T13:35:00Z"
+    },
+    {
+      "id": "device_013",
+      "name": "Master Bedroom Main Light",
+      "type": "light",
+      "manufacturer": "Philips Hue",
+      "model": "LWB007",
+      "status": "online",
+      "power_state": "off",
+      "brightness": 0,
+      "location": {
+        "floor": 2,
+        "room": "room_003",
+        "group": "group_001"
+      },
+      "energy_usage": 10.2,
+      "last_updated": "2024-01-15T13:30:00Z"
+    },
+    {
+      "id": "device_014",
+      "name": "Master Bedroom Nightstand Light",
+      "type": "light",
+      "manufacturer": "Xiaomi",
+      "model": "Yeelight",
+      "status": "online",
+      "power_state": "on",
+      "brightness": 20,
+      "location": {
+        "floor": 2,
+        "room": "room_003",
+        "group": "group_001"
+      },
+      "energy_usage": 4.5,
+      "last_updated": "2024-01-15T13:25:00Z"
+    },
+    {
+      "id": "device_015",
+      "name": "Master Bedroom TV",
+      "type": "entertainment",
+      "manufacturer": "LG",
+      "model": "OLED65C1PUB",
+      "status": "online",
+      "power_state": "off",
+      "location": {
+        "floor": 2,
+        "room": "room_003",
+        "group": "group_003"
+      },
+      "energy_usage": 95,
+      "last_updated": "2024-01-15T13:20:00Z"
+    },
+    {
+      "id": "device_016",
+      "name": "Master Bedroom Smart Blinds",
+      "type": "motor",
+      "manufacturer": "IKEA",
+      "model": "KADRILJ",
+      "status": "online",
+      "power_state": "open",
+      "position": 75,
+      "location": {
+        "floor": 2,
+        "room": "room_003",
+        "group": "group_003"
+      },
+      "energy_usage": 18,
+      "last_updated": "2024-01-15T13:15:00Z"
+    },
+    {
+      "id": "device_017",
+      "name": "Bathroom Main Light",
+      "type": "light",
+      "manufacturer": "TP-Link",
+      "model": "KL110",
+      "status": "online",
+      "power_state": "on",
+      "brightness": 100,
+      "location": {
+        "floor": 2,
+        "room": "room_004",
+        "group": "group_001"
+      },
+      "energy_usage": 11.7,
+      "last_updated": "2024-01-15T13:10:00Z"
+    },
+    {
+      "id": "device_018",
+      "name": "Bathroom Heated Floor",
+      "type": "heating",
+      "manufacturer": "Warmup",
+      "model": "4E",
+      "status": "online",
+      "power_state": "off",
+      "temperature": 0,
+      "location": {
+        "floor": 2,
+        "room": "room_004",
+        "group": "group_002"
+      },
+      "energy_usage": 0,
+      "last_updated": "2024-01-15T13:05:00Z"
+    },
+    {
+      "id": "device_019",
+      "name": "Bathroom Smart Mirror",
+      "type": "entertainment",
+      "manufacturer": "Simplehuman",
+      "model": "Sensor Mirror",
+      "status": "offline",
+      "power_state": "off",
+      "location": {
+        "floor": 2,
+        "room": "room_004",
+        "group": "group_003"
+      },
+      "energy_usage": 0,
+      "last_updated": "2024-01-15T13:00:00Z"
+    },
+    {
+      "id": "device_020",
+      "name": "Bathroom Ventilation Fan",
+      "type": "fan",
+      "manufacturer": "Broan",
+      "model": "678",
+      "status": "online",
+      "power_state": "on",
+      "speed": 2,
+      "location": {
+        "floor": 2,
+        "room": "room_004",
+        "group": "group_002"
+      },
+      "energy_usage": 32,
+      "last_updated": "2024-01-15T12:55:00Z"
+    }
+  ]
+}
