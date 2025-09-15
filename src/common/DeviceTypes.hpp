@@ -1,4 +1,4 @@
-enum class DeviceType : unsigned char
+enum class DeviceTypes : unsigned char
 {
     LIGHT,
     THERMOSTAT,

@@ -22,6 +22,8 @@ qt_add_executable(SmartHome
     src/core/SmartHomeFacade.hpp
     src/core//SysemStatus.cpp
     src/core/SystemStatus.hpp
+    src/core/SystemSummary.hpp
+    src/core/SystemSummary.cpp
 
     # Devices
     src/devices/Device.hpp
@@ -151,13 +153,18 @@ qt_add_executable(SmartHome
     src/management/GroupManager.cpp
 
     # Common
-    src/common/IntegrationType.hpp
-    src/common/DeviceType.hpp
-    src/common/GroupType.hpp
-    src/common/EventType.hpp
+    src/common/IntegrationTypes.hpp
+    src/common/DeviceTypes.hpp
+    src/common/GroupTypes.hpp
+    src/common/EventTypes.hpp
     src/common/CommandStatus.hpp
     src/common/Priority.hpp
     src/common/json.hpp
+    src/common/CameraTypes.hpp
+    src/common/LightTypes.hpp
+    src/common/LockTypes.hpp
+    src/common/SensorTypes.hpp
+    src/common/ThermostatTypes.hpp
 
 )
 

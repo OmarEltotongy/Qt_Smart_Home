@@ -1,11 +1,20 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
 class SystemStatus
 {
 private:
-    /* data */
+    int totalDevices;
+    int onlineDevices;
+    double energyUsage;
+    string currentMode;
+    bool securityArmed;
+    string lastUpdate;
 public:
     SystemStatus(/* args */);
     ~SystemStatus();
+
+    bool isHealthy();
+    string getUpTime();
 };
