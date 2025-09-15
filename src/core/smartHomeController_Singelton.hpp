@@ -1,3 +1,6 @@
+#ifndef __SMARTHOMECONTROLLER_SINGELTON_H__
+#define __SMARTHOMECONTROLLER_SINGELTON_H__
+
 #include <iostream>
 #include <memory>
 #include <string>
@@ -34,3 +37,5 @@ public:
     void addDevice(shared_ptr<Device> device);
     void creatGroup(string name, GroupType groupType);
 };
+
+#endif // __SMARTHOMECONTROLLER_SINGELTON_H__

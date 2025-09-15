@@ -1,3 +1,6 @@
+#ifndef __EVENTTYPES_H__
+#define __EVENTTYPES_H__
+
 enum class EventType : unsigned char
 {
     DEVICE_STATE_CHANGED,
@@ -11,3 +14,4 @@ enum class EventType : unsigned char
     DEVICE_OFFLINE,
     AUTOMATION_TRIGGERED
 };
+#endif // __EVENTTYPES_H__

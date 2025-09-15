@@ -1,3 +1,6 @@
+#ifndef __LOCKTYPES_H__
+#define __LOCKTYPES_H__
+
 enum class LockType : unsigned char
 {
     Keypad,
@@ -5,3 +8,5 @@ enum class LockType : unsigned char
     RFID,
     SmartWifi
 };
+
+#endif // __LOCKTYPES_H__

@@ -1,3 +1,6 @@
+#ifndef __AUTOMATIONENGINE_H__
+#define __AUTOMATIONENGINE_H__
+
 #include <iostream>
 using namespace std;
 
@@ -9,3 +12,5 @@ public:
     AutomationEngine(/* args */);
     ~AutomationEngine();
 };
+
+#endif // __AUTOMATIONENGINE_H__

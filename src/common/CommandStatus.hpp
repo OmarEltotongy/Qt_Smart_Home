@@ -1,3 +1,6 @@
+#ifndef __COMMANDSTATUS_H__
+#define __COMMANDSTATUS_H__
+
 enum class CommandStatus : unsigned char
 {
     PENDING,
@@ -8,3 +11,4 @@ enum class CommandStatus : unsigned char
     SCHEDULED
 
 };
+#endif // __COMMANDSTATUS_H__

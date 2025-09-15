@@ -1,0 +1,5 @@
+#ifndef __SMARTTHERMOSTATA_H__
+#define __SMARTTHERMOSTATA_H__
+
+
+#endif // __SMARTTHERMOSTATA_H__

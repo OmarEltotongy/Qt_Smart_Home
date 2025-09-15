@@ -1,3 +1,6 @@
+#ifndef __RINGFACTORY_H__
+#define __RINGFACTORY_H__
+
 #include "src/factories/DeviceFactory.hpp"
 
 
@@ -14,3 +17,5 @@ public:
     string getBrandName() override;
 };
 
+
+#endif // __RINGFACTORY_H__

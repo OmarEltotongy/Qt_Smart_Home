@@ -1,3 +1,6 @@
+#ifndef __LEGACYDEVICEFACTORY_H__
+#define __LEGACYDEVICEFACTORY_H__
+
 #include "src/factories/DeviceFactory.hpp"
 
 class LegacyDeviceFactory : public DeviceFactory
@@ -13,3 +16,5 @@ public:
     string getBrandName() override;
     
 };
+
+#endif // __LEGACYDEVICEFACTORY_H__

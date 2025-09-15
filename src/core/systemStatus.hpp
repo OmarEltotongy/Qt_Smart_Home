@@ -1,3 +1,6 @@
+#ifndef __SYSTEMSTATUS_H__
+#define __SYSTEMSTATUS_H__
+
 #include <iostream>
 #include <string>
 using namespace std;
@@ -18,3 +21,5 @@ public:
     bool isHealthy();
     string getUpTime();
 };
+
+#endif // __SYSTEMSTATUS_H__

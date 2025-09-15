@@ -1,3 +1,6 @@
+#ifndef __GOOGLENESTFACTORY_H__
+#define __GOOGLENESTFACTORY_H__
+
 #include "src/factories/DeviceFactory.hpp"
 
 
@@ -12,3 +15,5 @@ public:
     string getBrandName() override;
 };
 
+
+#endif // __GOOGLENESTFACTORY_H__

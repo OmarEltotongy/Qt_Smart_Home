@@ -1,0 +1,5 @@
+#ifndef __AUTOMATIONSTRATEGY_H__
+#define __AUTOMATIONSTRATEGY_H__
+
+
+#endif // __AUTOMATIONSTRATEGY_H__

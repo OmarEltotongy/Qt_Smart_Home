@@ -1,3 +1,6 @@
+#ifndef __SMARTHOMEFACADE_H__
+#define __SMARTHOMEFACADE_H__
+
 #include <memory>
 #include "core/SmartHomeController_Singelton.hpp"
 #include "core/SystemSummary.hpp"
@@ -21,3 +24,5 @@ public:
     SystemSummary getQuickStatus();
 };
 
+
+#endif // __SMARTHOMEFACADE_H__

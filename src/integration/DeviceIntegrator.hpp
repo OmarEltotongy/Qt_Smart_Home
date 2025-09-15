@@ -1,3 +1,6 @@
+#ifndef __DEVICEINTEGRATOR_H__
+#define __DEVICEINTEGRATOR_H__
+
 #include <iostream>
 #include <vector>
 #include <memory>
@@ -24,3 +27,5 @@ public:
 
 };
 
+
+#endif // __DEVICEINTEGRATOR_H__

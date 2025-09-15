@@ -1,0 +1,5 @@
+#ifndef __FUNCTIONALGROUP_H__
+#define __FUNCTIONALGROUP_H__
+
+
+#endif // __FUNCTIONALGROUP_H__

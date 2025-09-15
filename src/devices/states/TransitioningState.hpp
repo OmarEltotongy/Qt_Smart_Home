@@ -1,0 +1,5 @@
+#ifndef __TRANSITIONINGSTATE_H__
+#define __TRANSITIONINGSTATE_H__
+
+
+#endif // __TRANSITIONINGSTATE_H__

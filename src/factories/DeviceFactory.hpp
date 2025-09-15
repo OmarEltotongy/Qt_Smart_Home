@@ -1,3 +1,6 @@
+#ifndef __DEVICEFACTORY_H__
+#define __DEVICEFACTORY_H__
+
 #include <iostream>
 #include <string>
 #include <vector>
@@ -38,3 +41,5 @@ public:
     virtual vector<DeviceTypes> getSupportedTypes();
 
 };
+
+#endif // __DEVICEFACTORY_H__
