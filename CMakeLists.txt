@@ -24,9 +24,28 @@ qt_add_resources(SmartHome "data_resources"
         Data/automation_rules.json
         Data/command_queue.json
         Data/recent_commands.json
-        Data/json.hpp
-)
 
+        SystemClassesHeaderFiles/json.hpp
+        SystemClassesHeaderFiles/abstractFactory.hpp
+        SystemClassesHeaderFiles/adapter.hpp
+        SystemClassesHeaderFiles/command.hpp
+        SystemClassesHeaderFiles/composite.hpp
+        SystemClassesHeaderFiles/facade.hpp
+        SystemClassesHeaderFiles/observer.hpp
+        SystemClassesHeaderFiles/singelton.hpp
+        SystemClassesHeaderFiles/state.hpp
+        SystemClassesHeaderFiles/strategy.hpp
+
+        SystemClassesSourceFiles/abstractFactory.cpp
+        SystemClassesSourceFiles/adapter.cpp
+        SystemClassesSourceFiles/command.cpp
+        SystemClassesSourceFiles/composite.cpp
+        SystemClassesSourceFiles/facade.cpp
+        SystemClassesSourceFiles/observer.cpp
+        SystemClassesSourceFiles/singleton.cpp
+        SystemClassesSourceFiles/state.cpp
+        SystemClassesSourceFiles/strategy.cpp
+    )
 # This line to include the QSS file as a resource (if you have it)
 # qt_add_resources(SmartHome "style_resources"
 #     PREFIX "/"
