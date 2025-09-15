@@ -1,6 +1,16 @@
 #include <iostream>
 #include <memory>
 #include <string>
+#include "management/DeviceRegistry.hpp"
+#include "management/GroupManager.hpp"
+#include "commands/CommandQueue.hpp"
+#include "automation/AutomationEngine.hpp"
+#include "events/EventBus.hpp"
+#include "core/SystemStatus.hpp"
+#include "commands/Command.hpp"
+#include "devices/Device.hpp"
+#include "common/GroupType.hpp"
+
 
 using namespace std;
 
@@ -10,9 +20,9 @@ private:
     static unique_ptr<SmartHomeController_Singelton> instance;
     DeviceRegistry deviceRegistry;
     GroupManager groupManager;
-    shared_ptr<CommandQueue_Command> commandQueue;
+    shared_ptr<CommandQueue> commandQueue;
     AutomationEngine automationEngine;
-    shared_ptr<EventBus_Observer> eventBus;
+    shared_ptr<EventBus> eventBus;
     SystemStatus systemStatus;
 
 public:
