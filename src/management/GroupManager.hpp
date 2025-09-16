@@ -12,7 +12,7 @@ using namespace std;
 
 class GroupManager
 {
-private:
+protected:
     map<string, shared_ptr<DeviceGroup>> groups;
     map<string, vector<string>> groupHierarchy;
 

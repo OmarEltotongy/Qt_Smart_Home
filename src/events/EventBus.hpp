@@ -14,7 +14,7 @@ using namespace std;
 
 class EventBus
 {
-private:
+protected:
     vector<shared_ptr<Observer>> observers;
     queue<shared_ptr<Event>> eventQueue;
 public:

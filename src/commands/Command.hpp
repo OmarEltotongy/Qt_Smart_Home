@@ -8,7 +8,7 @@ using namespace std;
 /*This is abstract command*/
 class Command
 {
-private:
+protected:
     string commandID;
     string creationTime;
     Priority priority;
