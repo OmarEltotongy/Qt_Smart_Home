@@ -133,14 +133,18 @@ qt_add_executable(SmartHome
     src/automation/SleepModeStrategy.cpp
     src/automation/AutomationRule.hpp
     src/automation/AutomationRule.cpp
+    src/automation/Action.cpp
+    src/automation/Action.hpp
+    src/automation/Condition.cpp
+    src/automation/Condition.hpp
+    src/automation/Trigger.cpp
+    src/automation/Trigger.hpp
 
     # Integration
     src/integration/DeviceIntegrator.hpp
     src/integration/DeviceIntegrator.cpp
     src/integration/NativeIntegrator.hpp
     src/integration/NativeIntegrator.cpp
-    src/integration/APIIntegrator.hpp
-    src/integration/APIIntegrator.cpp
     src/integration/LegacyDeviceAdapter.hpp
     src/integration/LegacyDeviceAdapter.cpp
     src/integration/LegacyDevice.hpp
