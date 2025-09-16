@@ -21,7 +21,6 @@ private:
     std::vector<std::unique_ptr<Condition>> conditions;
     std::vector<std::unique_ptr<Action>> actions;
     int executionCount;
-    std::string lastExecution;
 
 public:
     AutomationRule(const std::string &id, const std::string &name,
@@ -37,18 +36,6 @@ public:
     void enable();
     void disable();
     void setDescription(const std::string &desc);
-
-    // Getters
-    std::string getId() const;
-    std::string getName() const;
-    std::string getDescription() const;
-    bool isEnabled() const;
-    const Trigger *getTrigger() const;
-    const std::vector<std::unique_ptr<Condition>> &getConditions() const;
-    const std::vector<std::unique_ptr<Action>> &getActions() const;
     int getExecutionCount() const;
-    std::string getLastExecution() const;
 
-    // Factory method from configuration
-    static std::unique_ptr<AutomationRule> createFromConfig(const std::map<std::string, std::any> &config);
-};
+    };
