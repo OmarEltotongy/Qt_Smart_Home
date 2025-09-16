@@ -24,7 +24,7 @@ private:
 
 public:
     AutomationRule(const std::string &id, const std::string &name,
-                   std::unique_ptr<Trigger> triggerObj);
+                std::unique_ptr<Trigger> triggerObj);
 
     // Rule evaluation and execution
     bool evaluate(const Event &event, SmartHomeController_Singelton *controller) const;
@@ -37,5 +37,4 @@ public:
     void disable();
     void setDescription(const std::string &desc);
     int getExecutionCount() const;
-
-    };
+};
