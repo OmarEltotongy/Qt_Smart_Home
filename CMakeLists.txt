@@ -44,8 +44,6 @@ qt_add_executable(SmartHome
     src/devices/SecurityCamera.cpp
     src/devices/WiredCamera.hpp
     src/devices/WiredCamera.cpp
-    src/devices/WirelessCamera.hpp
-    src/devices/WirelessCamera.cpp
     src/devices/DoorLock.hpp
     src/devices/DoorLock.cpp
     src/devices/MotionSensor.hpp
@@ -158,7 +156,6 @@ qt_add_executable(SmartHome
 
     # Common
     src/common/json.hpp
-
     src/common/IntegrationTypes.hpp
     src/common/DeviceTypes.hpp
     src/common/GroupTypes.hpp
