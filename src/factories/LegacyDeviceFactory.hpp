@@ -1,5 +1,5 @@
-#ifndef __LEGACYDEVICEFACTORY_H__
-#define __LEGACYDEVICEFACTORY_H__
+#pragma once
+
 
 #include "src/factories/DeviceFactory.hpp"
 
@@ -11,10 +11,9 @@ public:
     LegacyDeviceFactory(/* args */);
     ~LegacyDeviceFactory();
 
-    Light createLight(LightType type) override;
-    DoorLock createLock(LockType type) override;
+    Light createLight(const LightType& type) override;
+    DoorLock createLock(const LockType& type) override;
     string getBrandName() override;
     
 };
 
-#endif // __LEGACYDEVICEFACTORY_H__

@@ -1,5 +1,5 @@
-#ifndef __GROUPTYPES_H__
-#define __GROUPTYPES_H__
+#pragma once
+
 
 enum class GroupType : unsigned char
 {
@@ -10,4 +10,3 @@ enum class GroupType : unsigned char
     CLIMATE_ZONE
 };
 
-#endif // __GROUPTYPES_H__

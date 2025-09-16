@@ -1,7 +1,6 @@
-#ifndef __SENSORTYPES_H__
-#define __SENSORTYPES_H__
+#pragma once
 
-enum class SensorType: unsigned char
+enum class SensorType : unsigned char
 {
     Motion,
     Temperature,
@@ -9,5 +8,3 @@ enum class SensorType: unsigned char
     Contact,
     Humidity
 };
-
-#endif // __SENSORTYPES_H__

@@ -1,5 +1,1 @@
-#ifndef __AUTOMATIONOBSERVER_H__
-#define __AUTOMATIONOBSERVER_H__
-
-
-#endif // __AUTOMATIONOBSERVER_H__
+#pragma once

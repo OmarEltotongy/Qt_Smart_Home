@@ -1,5 +1,4 @@
-#ifndef __COMMANDSTATUS_H__
-#define __COMMANDSTATUS_H__
+#pragma once
 
 enum class CommandStatus : unsigned char
 {
@@ -11,4 +10,3 @@ enum class CommandStatus : unsigned char
     SCHEDULED
 
 };
-#endif // __COMMANDSTATUS_H__

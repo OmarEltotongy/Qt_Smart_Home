@@ -1,5 +1,13 @@
-#ifndef __AUTOMATIONSTRATEGY_H__
-#define __AUTOMATIONSTRATEGY_H__
+#pragma once
+#include <iostream>
+using namespace std;
 
+class AutomationStrategy
+{
+private:
+    /* data */
+public:
+    AutomationStrategy(/* args */);
+    ~AutomationStrategy();
+};
 
-#endif // __AUTOMATIONSTRATEGY_H__

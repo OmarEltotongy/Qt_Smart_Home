@@ -1,5 +1,1 @@
-#ifndef __SMARTTHERMOSTATB_H__
-#define __SMARTTHERMOSTATB_H__
-
-
-#endif // __SMARTTHERMOSTATB_H__
+#pragma once

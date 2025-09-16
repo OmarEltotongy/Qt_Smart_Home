@@ -1,5 +1,4 @@
-#ifndef __SYSTEMSUMMARY_H__
-#define __SYSTEMSUMMARY_H__
+#pragma once
 
 #include <string>
 
@@ -27,5 +26,3 @@ public:
     void setSecurityArmed(bool armed);
     void setCurrentMode(const std::string &mode);
 };
-
-#endif // __SYSTEMSUMMARY_H__

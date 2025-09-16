@@ -1,5 +1,5 @@
-#ifndef __INTEGRATIONTYPES_H__
-#define __INTEGRATIONTYPES_H__
+#pragma once
+
 
 enum class IntegrationType : unsigned char
 {
@@ -10,4 +10,3 @@ enum class IntegrationType : unsigned char
     BLUETOOTH,
     WIFI_DIRECT
 };
-#endif // __INTEGRATIONTYPES_H__

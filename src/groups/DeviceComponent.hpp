@@ -1,5 +1,4 @@
-#ifndef __DEVICECOMPONENT_H__
-#define __DEVICECOMPONENT_H__
+#pragma once
 
 #include <iostream>
 #include <vector>
@@ -18,11 +17,10 @@ public:
     DeviceComponent(/* args */);
     ~DeviceComponent();
 
-    virtual void add(shared_ptr<DeviceComponent> component);
-    virtual void remove(shared_ptr<DeviceComponent> component);
-    virtual bool executeCommand(shared_ptr<Command> cmd);
-    virtual DeviceComponent getChild(int index);
-    virtual int getChildCount();
+    virtual void add(const shared_ptr<DeviceComponent>& component) = 0;
+    virtual void remove(const shared_ptr<DeviceComponent>& component) = 0;
+    virtual bool executeCommand(const shared_ptr<Command>& cmd) = 0;
+    virtual DeviceComponent getChild(const int& index) = 0;
+    virtual int getChildCount() = 0;
 };
 
-#endif // __DEVICECOMPONENT_H__

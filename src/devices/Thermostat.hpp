@@ -1,5 +1,4 @@
-#ifndef __THERMOSTAT_H__
-#define __THERMOSTAT_H__
+#pragma once
 
 class Thermostat
 {
@@ -9,5 +8,3 @@ public:
     Thermostat(/* args */);
     ~Thermostat();
 };
-
-#endif // __THERMOSTAT_H__

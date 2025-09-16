@@ -1,11 +1,7 @@
-#ifndef __THERMOSTATTYPES_H__
-#define __THERMOSTATTYPES_H__
-
+#pragma once
 
 enum class ThermostatType : unsigned char
 {
     SmartA, // Smart Thermostat A (with learning + schedules)
     SmartB  // Smart Thermostat B (with voice control)
 };
-
-#endif // __THERMOSTATTYPES_H__

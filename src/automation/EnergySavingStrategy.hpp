@@ -1,5 +1,1 @@
-#ifndef __ENERGYSAVINGSTRATEGY_H__
-#define __ENERGYSAVINGSTRATEGY_H__
-
-
-#endif // __ENERGYSAVINGSTRATEGY_H__
+#pragma once

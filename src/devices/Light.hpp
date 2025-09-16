@@ -1,5 +1,4 @@
-#ifndef __LIGHT_H__
-#define __LIGHT_H__
+#pragma once
 
 class Light
 {
@@ -9,5 +8,3 @@ public:
     Light(/* args */);
     ~Light();
 };
-
-#endif // __LIGHT_H__

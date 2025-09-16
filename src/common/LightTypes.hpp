@@ -1,5 +1,5 @@
-#ifndef __LIGHTTYPES_H__
-#define __LIGHTTYPES_H__
+#pragma once
+
 
 enum class LightType: unsigned char
 {
@@ -11,5 +11,3 @@ enum class LightType: unsigned char
     StripLight,   // LED strip lights
     PanelLight    // Smart ceiling or panel lights
 };
-
-#endif // __LIGHTTYPES_H__

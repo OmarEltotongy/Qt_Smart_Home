@@ -1,5 +1,1 @@
-#ifndef __LEGACYDEVICEADAPTER_H__
-#define __LEGACYDEVICEADAPTER_H__
-
-
-#endif // __LEGACYDEVICEADAPTER_H__
+#pragma once

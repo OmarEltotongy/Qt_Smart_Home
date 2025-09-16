@@ -1,5 +1,5 @@
-#ifndef __EVENTBUS_H__
-#define __EVENTBUS_H__
+#pragma once
+
 
 #include <iostream>
 #include <memory>
@@ -20,11 +20,9 @@ private:
 public:
     EventBus(/* args */);
     ~EventBus();
-    void subscribe(shared_ptr<Observer> observer, EventType type);
-    void unsubscribe(shared_ptr<Observer> observer);
-    void publish(shared_ptr<Event> event);
+    void subscribe(const shared_ptr<Observer>& observer, const EventType& type);
+    void unsubscribe(const shared_ptr<Observer>& observer);
+    void publish(const shared_ptr<Event>& event);
     void processEvents();   
 
 };
-
-#endif // __EVENTBUS_H__

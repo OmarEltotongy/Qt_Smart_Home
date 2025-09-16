@@ -1,5 +1,5 @@
-#ifndef __LOCKTYPES_H__
-#define __LOCKTYPES_H__
+#pragma once
+
 
 enum class LockType : unsigned char
 {
@@ -9,4 +9,3 @@ enum class LockType : unsigned char
     SmartWifi
 };
 
-#endif // __LOCKTYPES_H__

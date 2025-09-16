@@ -1,11 +1,7 @@
-#ifndef __CAMERATYPES_H__
-#define __CAMERATYPES_H__
-
+#pragma once
 
 enum class CameraType : unsigned char
 {
     Wired,
     Wireless
 };
-
-#endif // __CAMERATYPES_H__

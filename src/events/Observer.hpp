@@ -1,10 +1,12 @@
-#ifndef __OBSERVER_H__
-#define __OBSERVER_H__
+#pragma once
 
 #include <iostream>
+#include <memory>
+#include "src/events/Event.hpp"
 
 using namespace std;
 
+/*This is Interface for Observer*/
 class Observer
 {
 private:
@@ -12,6 +14,8 @@ private:
 public:
     Observer(/* args */);
     ~Observer();
+
+    virtual void update(const shared_ptr<Event>& event) = 0;
+    virtual string getObserverID() = 0;
 };
 
-#endif // __OBSERVER_H__

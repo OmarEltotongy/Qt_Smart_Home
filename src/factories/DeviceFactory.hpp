@@ -32,11 +32,11 @@ public:
     DeviceFactory(/* args */);
     ~DeviceFactory();
 
-    virtual Light createLight(LightType type);
-    virtual Thermostat createThermostat(ThermostatType type);
-    virtual SecurityCamera creatCamera(CameraType type);
-    virtual DoorLock createLock(LockType type);
-    virtual MotionSensor createSensor(SensorType type);
+    virtual Light createLight(const LightType& type);
+    virtual Thermostat createThermostat(const ThermostatType& type);
+    virtual SecurityCamera creatCamera(const CameraType& type);
+    virtual DoorLock createLock(const LockType& type);
+    virtual MotionSensor createSensor(const SensorType& type);
     virtual string getBrandName();
     virtual vector<DeviceTypes> getSupportedTypes();
 

@@ -1,5 +1,4 @@
-#ifndef __DOORLOCK_H__
-#define __DOORLOCK_H__
+#pragma once
 
 class DoorLock
 {
@@ -10,4 +9,3 @@ public:
     ~DoorLock();
 };
 
-#endif // __DOORLOCK_H__

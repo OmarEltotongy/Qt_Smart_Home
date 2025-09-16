@@ -1,5 +1,1 @@
-#ifndef __SETBRIGHTNESSCOMMAND_H__
-#define __SETBRIGHTNESSCOMMAND_H__
-
-
-#endif // __SETBRIGHTNESSCOMMAND_H__
+#pragma once

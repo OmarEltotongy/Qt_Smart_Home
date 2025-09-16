@@ -1,5 +1,4 @@
-#ifndef __DEVICE_H__
-#define __DEVICE_H__
+#pragma once
 
 #include <iostream>
 #include <src/groups/DeviceComponent.hpp>
@@ -14,4 +13,3 @@ public:
     ~Device();
 };
 
-#endif // __DEVICE_H__

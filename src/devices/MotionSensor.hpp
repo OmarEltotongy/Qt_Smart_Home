@@ -1,5 +1,5 @@
-#ifndef __MOTIONSENSOR_H__
-#define __MOTIONSENSOR_H__
+#pragma once
+
 
 class MotionSensor
 {
@@ -10,4 +10,3 @@ public:
     ~MotionSensor();
 };
 
-#endif // __MOTIONSENSOR_H__

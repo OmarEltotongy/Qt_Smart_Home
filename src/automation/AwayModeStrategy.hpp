@@ -1,5 +1,1 @@
-#ifndef __AWAYMODESTRATEGY_H__
-#define __AWAYMODESTRATEGY_H__
-
-
-#endif // __AWAYMODESTRATEGY_H__
+#pragma once

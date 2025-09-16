@@ -1,5 +1,4 @@
-#ifndef __GROUPMANAGER_H__
-#define __GROUPMANAGER_H__
+#pragma once
 
 #include <iostream>
 #include <map>
@@ -21,12 +20,11 @@ public:
     GroupManager(/* args */);
     ~GroupManager();
 
-    DeviceGroup creatGroup(string name, GroupType type);
-    bool deleteGroup(string groupID);
-    bool addDeviceToGroup(string deviceID, string groupID);
-    DeviceGroup getGroup(string groupID);
+    DeviceGroup creatGroup(const string& name,const GroupType& type);
+    bool deleteGroup(const string& groupID);
+    bool addDeviceToGroup(const string& deviceID, const string& groupID);
+    DeviceGroup getGroup(const string& groupID);
     vector<shared_ptr<DeviceGroup>> getAllGroups();
-    vector<shared_ptr<DeviceGroup>> getGroupsByType(GroupType type);
+    vector<shared_ptr<DeviceGroup>> getGroupsByType(const GroupType& type);
 };
 
-#endif // __GROUPMANAGER_H__

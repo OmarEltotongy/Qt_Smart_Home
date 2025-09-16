@@ -1,5 +1,5 @@
-#ifndef __NATIVEINTEGRATOR_H__
-#define __NATIVEINTEGRATOR_H__
+#pragma once
+
 
 #include <src/integration/DeviceIntegrator.hpp>
 class NativeIntegrator: public DeviceIntegrator
@@ -11,9 +11,8 @@ public:
     ~NativeIntegrator();
 
     vector<shared_ptr<Device>> discoverDevice() override;
-    bool connectDevice(string deviceID) override;
+    bool connectDevice(const string& deviceID) override;
     IntegrationType getIntegrationType() override;
     
 };
 
-#endif // __NATIVEINTEGRATOR_H__

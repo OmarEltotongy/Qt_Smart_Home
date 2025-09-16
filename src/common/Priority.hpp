@@ -1,5 +1,4 @@
-#ifndef __PRIORITY_H__
-#define __PRIORITY_H__
+#pragma once
 
 enum class Priority : unsigned char
 {
@@ -9,4 +8,3 @@ enum class Priority : unsigned char
     CRITICAL,
     EMERGENCY
 };
-#endif // __PRIORITY_H__

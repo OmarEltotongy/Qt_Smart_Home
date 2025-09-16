@@ -1,5 +1,4 @@
-#ifndef __EVENTTYPES_H__
-#define __EVENTTYPES_H__
+#pragma once
 
 enum class EventType : unsigned char
 {
@@ -14,4 +13,3 @@ enum class EventType : unsigned char
     DEVICE_OFFLINE,
     AUTOMATION_TRIGGERED
 };
-#endif // __EVENTTYPES_H__

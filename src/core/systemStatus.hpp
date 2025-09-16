@@ -1,5 +1,4 @@
-#ifndef __SYSTEMSTATUS_H__
-#define __SYSTEMSTATUS_H__
+#pragma once
 
 #include <iostream>
 #include <string>
@@ -22,4 +21,3 @@ public:
     string getUpTime();
 };
 
-#endif // __SYSTEMSTATUS_H__

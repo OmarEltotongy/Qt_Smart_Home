@@ -1,5 +1,5 @@
-#ifndef __EVENT_H__
-#define __EVENT_H__
+#pragma once
+
 
 #include <iostream>
 #include <string>
@@ -16,7 +16,7 @@ private:
     string eventID;
     EventType type;
     string sourceDeviceID;
-    map<std::string,std::any> data;
+    map<std::string, std::any> data;
     string eventTime;
 
 public:
@@ -25,8 +25,6 @@ public:
 
     EventType getType();
     string getSource();
-    map<string,any> getData();
+    map<string, any> getData();
     string getTimeStamp();
-    
 };
-#endif // __EVENT_H__

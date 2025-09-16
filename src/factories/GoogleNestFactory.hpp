@@ -1,19 +1,14 @@
-#ifndef __GOOGLENESTFACTORY_H__
-#define __GOOGLENESTFACTORY_H__
+#pragma once
 
 #include "src/factories/DeviceFactory.hpp"
 
-
-class GoogleNestFactory: public DeviceFactory
+class GoogleNestFactory : public DeviceFactory
 {
 public:
     GoogleNestFactory(/* args */);
     ~GoogleNestFactory();
 
-    Light createLight(LightType type) override;
-    Thermostat createThermostat(ThermostatType type) override;
+    Light createLight(const LightType &type) override;
+    Thermostat createThermostat(const ThermostatType &type) override;
     string getBrandName() override;
 };
-
-
-#endif // __GOOGLENESTFACTORY_H__

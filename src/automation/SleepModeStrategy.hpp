@@ -1,5 +1,1 @@
-#ifndef __SLEEPMODESTRATEGY_H__
-#define __SLEEPMODESTRATEGY_H__
-
-
-#endif // __SLEEPMODESTRATEGY_H__
+#pragma once

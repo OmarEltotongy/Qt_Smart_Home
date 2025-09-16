@@ -1,5 +1,5 @@
-#ifndef __PHILIPSFACTORY_H__
-#define __PHILIPSFACTORY_H__
+#pragma once
+
 
 #include "src/factories/DeviceFactory.hpp"
 
@@ -11,9 +11,8 @@ public:
     PhilipsFactory(/* args */);
     ~PhilipsFactory();
 
-    Light createLight(LightType type) override;
-    Thermostat createThermostat(ThermostatType type) override;
+    Light createLight(const LightType& type) override;
+    Thermostat createThermostat(const ThermostatType& type) override;
     string getBrandName() override;
 };
 
-#endif // __PHILIPSFACTORY_H__

@@ -1,5 +1,1 @@
-#ifndef __COMFORTMODESTRATEGY_H__
-#define __COMFORTMODESTRATEGY_H__
-
-
-#endif // __COMFORTMODESTRATEGY_H__
+#pragma once

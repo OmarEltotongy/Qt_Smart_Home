@@ -1,5 +1,4 @@
-#ifndef __DEVICEINTEGRATOR_H__
-#define __DEVICEINTEGRATOR_H__
+#pragma once
 
 #include <iostream>
 #include <vector>
@@ -20,12 +19,11 @@ public:
     ~DeviceIntegrator();
 
     virtual vector<shared_ptr<Device>> discoverDevice();
-    virtual bool connectDevice(string deviceID);
-    virtual bool disconnectDevice(string deviceID);
+    virtual bool connectDevice(const string& deviceID);
+    virtual bool disconnectDevice(const string& deviceID);
     virtual IntegrationType getIntegrationType();
-    virtual bool isDeviceSupported(string deviceModel);
+    virtual bool isDeviceSupported(const string& deviceModel);
 
 };
 
 
-#endif // __DEVICEINTEGRATOR_H__

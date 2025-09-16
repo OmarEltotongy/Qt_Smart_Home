@@ -1,5 +1,5 @@
-#ifndef __SECURITYCAMERA_H__
-#define __SECURITYCAMERA_H__
+#pragma once
+
 
 class SecurityCamera
 {
@@ -10,4 +10,3 @@ public:
     ~SecurityCamera();
 };
 
-#endif // __SECURITYCAMERA_H__

@@ -1,5 +1,4 @@
-#ifndef __SMARTHOMEFACADE_H__
-#define __SMARTHOMEFACADE_H__
+#pragma once
 
 #include <memory>
 #include "core/SmartHomeController_Singelton.hpp"
@@ -15,14 +14,11 @@ public:
     SmartHomeFacade(/* args */);
     ~SmartHomeFacade();
 
-    void turnOnRoom(string roomName);
-    void turnOffRoom(string roomName);
-    void setRoomTemperature(string room, int temp);
-    void executeScenario(string scenarioName);
+    void turnOnRoom(const string &roomName);
+    void turnOffRoom(const string &roomName);
+    void setRoomTemperature(const string &room, const int &temp);
+    void executeScenario(const string &scenarioName);
     void armSecurity();
     void emergencyShutdown();
     SystemSummary getQuickStatus();
 };
-
-
-#endif // __SMARTHOMEFACADE_H__
