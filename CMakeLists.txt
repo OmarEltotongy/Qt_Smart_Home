@@ -157,13 +157,14 @@ qt_add_executable(SmartHome
     src/management/GroupManager.cpp
 
     # Common
+    src/common/json.hpp
+
     src/common/IntegrationTypes.hpp
     src/common/DeviceTypes.hpp
     src/common/GroupTypes.hpp
     src/common/EventTypes.hpp
     src/common/CommandStatus.hpp
     src/common/Priority.hpp
-    src/common/json.hpp
     src/common/CameraTypes.hpp
     src/common/LightTypes.hpp
     src/common/LockTypes.hpp
